@@ -2,7 +2,7 @@
   "name": "D-ATIS FOR VCLvACC",
   "id": "a6baba30-4d1c-4473-a715-280fc0afdfaf",
   "updateUrl": "https://raw.githubusercontent.com/hoangvclvacc/vATIS-profile-for-VCLvACC-Controller/refs/heads/main/vATIS_Profile_D_ATIS_FOR_VCLvACC.json",
-  "updateSerial": 2026041303,
+  "updateSerial": 2026041301,
   "stations": [
     {
       "id": "5d98962e-b942-4df8-b4bf-32578ce70d88",
