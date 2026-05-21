@@ -1,8 +1,8 @@
 {
   "name": "D-ATIS FOR VCLvACC",
-  "id": "a6baba30-4d1c-4473-a715-280fc0afdfaf",
+  "id": "ebdaa398-7be9-4811-9552-09ab16bdb090",
   "updateUrl": "https://raw.githubusercontent.com/hoangvclvacc/vATIS-profile-for-VCLvACC-Controller/refs/heads/main/vATIS_Profile_D_ATIS_FOR_VCLvACC.json",
-  "updateSerial": 2026041303,
+  "updateSerial": 2026041304,
   "stations": [
     {
       "id": "5d98962e-b942-4df8-b4bf-32578ce70d88",
@@ -4053,7 +4053,7 @@
         {
           "id": "65485e78-3372-4550-ba9b-35dd46516298",
           "name": "17L/R",
-          "airportConditions": "VSA_APCH_IN_USE_LANDING_17L_DEPARTING_RUNWAY_17R",
+          "airportConditions": "VSA_APCH_IN_USE_LANDING_17R_DEPARTING_RUNWAY_17L",
           "template": "DANANG [ATIS_CODE]. [OBS_TIME]. [ARPT_COND] [OBS_TIME]. SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
@@ -4198,14 +4198,14 @@
           "voice": "SURFACE. WIND."
         },
         {
-          "variableName": "VSA_APCH_IN_USE_LANDING_17L_DEPARTING_RUNWAY_17R",
-          "text": "VOR WHISKEY APPROACH 17L.. DPTG RWY 17R..",
-          "voice": "VOR. WHISKEY. APPROACH. 'ONE SEVEN LEFT. DEPARTING RUNWAY, ONE SEVEN RIGHT."
+          "variableName": "VSA_APCH_IN_USE_LANDING_17R_DEPARTING_RUNWAY_17L",
+          "text": "VOR ZULU OR VOR YANKEE 17R.. DPTG RWY 17L..",
+          "voice": "VOR. ZULU. OR. VOR. YANKEE. ONE SEVEN RIGHT. DEPARTING RWY. ONE SEVEN LEFT..."
         },
         {
           "variableName": "VSA_APCH_IN_USE_LANDING_AND_DEPARTING_RUNWAY_17L",
-          "text": "VOR WHISKEY APPROACH 17L.. DPTG RWY 17L..",
-          "voice": "VOR. WHISKEY. APPROACH. ONE SEVEN LEFT. DEPARTING RUNWAY, ONE SEVEN LEFT."
+          "text": "VOR ZULU OR VOR YANKEE 17L.. DPTG RWY 17L..",
+          "voice": "VOR. ZULU. OR. VOR. YANKEE. ONE SEVEN LEFT.. DEPARTING RWY. ONE SEVEN LEFT.."
         },
         {
           "variableName": "AIRPORT",
@@ -4214,8 +4214,8 @@
         },
         {
           "variableName": "VSA_APCH_IN_USE_LANDING_AND_DEPARTING_RUNWAY_17R",
-          "text": "VOR WHISKEY APPROACH 17R.. DPTG RWY 17R..",
-          "voice": "VOR. WHISKEY. APPROACH. ONE SEVEN RIGHT. DEPARTING RUNWAY, ONE SEVEN RIGHT."
+          "text": "VOR ZULU OR VOR YANKEE 17R.. DPTG RWY 17R..",
+          "voice": "VOR. ZULU. OR. VOR. YANKEE. ONE SEVEN RIGHT.. DEPARTING RWY. ONE SEVEN RIGHT.."
         }
       ],
       "airportConditionDefinitions": [],
@@ -6263,7 +6263,7 @@
         {
           "variableName": "CAMRANH",
           "text": "[TIME] VVCR INFO",
-          "voice": "CAM ARN. AIRPORT. INFORMATION."
+          "voice": "CAM RARN. AIRPORT. INFORMATION."
         },
         {
           "variableName": "02L",
@@ -8257,7 +8257,7 @@
           "name": "07L/R",
           "airportConditions": "RNP_Y_APCH_IN_RWY_07L_LDG_RWY_07L_AND_DPTG_RWY_07R",
           "notams": "FOLLOW_INSTRUCT_STRICTLY",
-          "template": "TANSONNHAT [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME]. SURFACE_WIND_TDZ_07L [WIND] [RVR] [VIS] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS] [TREND]. [NOTAMS]",
+          "template": "TANSONNHAT [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME]. SURFACE_WIND_TDZ_07L [WIND] [RVR] [VIS] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS] [TREND]. [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
