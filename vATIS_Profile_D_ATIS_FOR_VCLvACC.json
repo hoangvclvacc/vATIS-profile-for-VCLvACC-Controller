@@ -1,8 +1,8 @@
 {
   "name": "D-ATIS FOR VCLvACC",
-  "id": "ebdaa398-7be9-4811-9552-09ab16bdb090",
+  "id": "a329cd0c-57de-47fd-bde7-6bd8d505d773",
   "updateUrl": "https://raw.githubusercontent.com/hoangvclvacc/vATIS-profile-for-VCLvACC-Controller/refs/heads/main/vATIS_Profile_D_ATIS_FOR_VCLvACC.json",
-  "updateSerial": 2026041304,
+  "updateSerial": 2026041305,
   "stations": [
     {
       "id": "5d98962e-b942-4df8-b4bf-32578ce70d88",
@@ -1918,12 +1918,13 @@
       "useDecimalTerminology": false,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "US Male",
+        "voice": "UK Male",
         "speechRate": 200
       },
       "presets": [
         {
           "id": "9c0817b2-1a39-4650-b2a1-c006d28ec304",
+          "ordinal": 1,
           "name": "11 OPERATIONS",
           "airportConditions": "ILS_X_RUNWAY_11L_DEPARTURE_11R_AND_ARRIVAL_11L",
           "notams": "",
@@ -1939,7 +1940,25 @@
           }
         },
         {
+          "id": "03959c28-0a70-4183-bcea-033ad34fffc6",
+          "ordinal": 2,
+          "name": "11 High",
+          "airportConditions": "11HIGH",
+          "notams": "ACDM",
+          "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
           "id": "8fe36480-32b2-428b-831f-f71b0a784644",
+          "ordinal": 3,
           "name": "29 OPERATIONS",
           "airportConditions": "ILS_X_RUNWAY_29R_DEPARTURE_29L_AND_ARRIVAL_29R",
           "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS]",
@@ -1954,7 +1973,25 @@
           }
         },
         {
+          "id": "f27509d3-fa47-44c4-959f-73e1adf21789",
+          "ordinal": 3,
+          "name": "29 High",
+          "airportConditions": "29HIGH",
+          "notams": "ACDM",
+          "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
           "id": "61c18040-0c0c-4112-90c1-9a9dbc29bbc9",
+          "ordinal": 5,
           "name": "LANDING AND DEPARTING 11L",
           "airportConditions": "ILS_X_RUNWAY_11L_LANDING_AND_DEPARTING_RUNWAY_11L",
           "notams": "",
@@ -1971,6 +2008,7 @@
         },
         {
           "id": "65344fa1-6a13-46f7-8cc7-1f19daa71dfe",
+          "ordinal": 6,
           "name": "LANDING AND DEPARTING 11R",
           "airportConditions": "ILS_X_RUNWAY_11R_LANDING_AND_DEPARTING_RUNWAY_11R",
           "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS]",
@@ -1986,6 +2024,7 @@
         },
         {
           "id": "deace138-1773-438c-a81b-50eaf39b08c7",
+          "ordinal": 7,
           "name": "LANDING AND DEPARTING RUNWAY 29L",
           "airportConditions": "ILS_W_RUNWAY_29L_LANDING_AND_DEPARTING_RUNWAY_29L",
           "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS]",
@@ -2001,6 +2040,7 @@
         },
         {
           "id": "ae2162eb-86c2-40e1-9fc3-dd6960a549ac",
+          "ordinal": 8,
           "name": "LANIDNG AND DEPARTING RUNWAY 29R",
           "airportConditions": "ILS_X_RUNWAY_29R_LANDING_AND_DEPARTING_RUNWAY_29R",
           "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS]",
@@ -2105,6 +2145,21 @@
           "variableName": "ILS_X_RUNWAY_29R_LANDING_AND_DEPARTING_RUNWAY_29R",
           "text": "ILS X RWY 29R.. LDG AND DPTG RWY 29R",
           "voice": "ILS. X-RAY. RUNWAY, TWO-NINER RIGHT. LANDING AND DEPARTING RUNWAY, TWO-NINER RIGHT"
+        },
+        {
+          "variableName": "ACDM",
+          "text": "A-CDM IN PROGRESS. SUBMIT TOBT MONITOR TSAT ON PILOT PORTAL https://vats.im/vcl/acdm.",
+          "voice": "ACDM. IN. PROGRESS. SUBMIT. T O B T.  MONITOR. T SAT. ON. PILOT. PORTAL."
+        },
+        {
+          "variableName": "11HIGH",
+          "text": " ILS X RWY 11L.. DPTG RWY 11R AND ARR RWY 11L. INITIAL CLIMB 5000FT.",
+          "voice": "ILS. X-RAY. RUNWAY, WUN WUN LEFT. DEPARTURE. WUN WUN RIGHT. END. ARRIVAL, ONE ONE LEFT. INITIAL. CLIMB. FIVE-THOUSAND. FEET."
+        },
+        {
+          "variableName": "29HIGH",
+          "text": "ILS X RWY 29R.. DPTG RWY 29L AND ARR RWY 29R. INITIAL CLIMB 5000FT.",
+          "voice": "ILS. X-RAY. RUNWAY, TWO-NINER RIGHT. DEPARTURE. TWO-NINER RIGHT. AND, ARRIVAL , TWO-NINER LEFT. INITIAL. CLIMB. FIVE-THOUSAND. FEET."
         }
       ],
       "airportConditionDefinitions": [],
@@ -4031,7 +4086,7 @@
       "useDecimalTerminology": false,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "US Male",
+        "voice": "UK Male",
         "speechRate": 190
       },
       "presets": [
@@ -4175,7 +4230,7 @@
         {
           "variableName": "ILS_V_APCH_35L_DEPARTING_RUNWAY_35R",
           "text": "ILS VICTOR APPROACH 35L.. DPTG RWY 35R..",
-          "voice": "ILS. VICTOR. APPROACH. THREE-FIVE LEFT. DEPARTING RUNWAY. THREE FIVE RIGHT."
+          "voice": "ILS. VICTOR. APPROACH. THREE FIVE LEFT. DEPARTING RUNWAY. THREE FIVE RIGHT."
         },
         {
           "variableName": "INFORMATION",
@@ -6142,7 +6197,7 @@
       "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "US Male",
+        "voice": "UK Male",
         "speechRate": 200
       },
       "presets": [
@@ -6263,7 +6318,7 @@
         {
           "variableName": "CAMRANH",
           "text": "[TIME] VVCR INFO",
-          "voice": "CAM RARN. AIRPORT. INFORMATION."
+          "voice": "KEM ARN. AIRPORT. INFORMATION."
         },
         {
           "variableName": "02L",
@@ -8230,16 +8285,33 @@
       "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "US Male",
+        "voice": "UK Male",
         "speechRate": 180
       },
       "presets": [
         {
           "id": "cbffd858-6d67-4542-a86b-98e8b3d21fbe",
-          "ordinal": 0,
+          "ordinal": 1,
           "name": "25L/R",
           "airportConditions": "ILS_W_APCH_IN_RWY_25R_LDG_RWY_25R_AND_DPTG_RWY_25L",
-          "notams": "FOLLOW_INSTRUCT_STRICTLY",
+          "notams": "",
+          "template": "TANSONNHAT [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME]. SURFACE_WIND_RUNWAY_25R_TDZ [WIND] [RVR] [VIS] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS] [TREND]. [NOTAMS] CLOSING_STATEMENT [ATIS_CODE].",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "c4381219-929d-4d00-ad9b-f7185e69d7d8",
+          "ordinal": 2,
+          "name": "25 High",
+          "airportConditions": "25HIGH",
+          "notams": "ACDM",
           "template": "TANSONNHAT [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME]. SURFACE_WIND_RUNWAY_25R_TDZ [WIND] [RVR] [VIS] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS] [TREND]. [NOTAMS] CLOSING_STATEMENT [ATIS_CODE].",
           "externalGenerator": {
             "enabled": false,
@@ -8253,11 +8325,28 @@
         },
         {
           "id": "db35f416-7a9d-4c49-a163-eacd842e0bc9",
-          "ordinal": 1,
+          "ordinal": 3,
           "name": "07L/R",
           "airportConditions": "RNP_Y_APCH_IN_RWY_07L_LDG_RWY_07L_AND_DPTG_RWY_07R",
           "notams": "FOLLOW_INSTRUCT_STRICTLY",
-          "template": "TANSONNHAT [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME]. SURFACE_WIND_TDZ_07L [WIND] [RVR] [VIS] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS] [TREND]. [NOTAMS] [CLOSING]",
+          "template": "TANSONNHAT [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME]. SURFACE_WIND_TDZ_07L [WIND] [RVR] [VIS] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS] [TREND]. [NOTAMS] CLOSING_STATEMENT [ATIS_CODE].",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "b1ede6ec-1212-4db9-a998-f6ae95172160",
+          "ordinal": 3,
+          "name": "07 HIGH",
+          "airportConditions": "07HIGH",
+          "notams": "ACDM",
+          "template": "TANSONNHAT [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME]. SURFACE_WIND_RUNWAY_25R_TDZ [WIND] [RVR] [VIS] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS] [TREND]. [NOTAMS] CLOSING_STATEMENT [ATIS_CODE].",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8270,10 +8359,10 @@
         },
         {
           "id": "daa3cfb3-b7d1-4d0f-8317-eb5401d9ad16",
-          "ordinal": 2,
+          "ordinal": 5,
           "name": "LANDING AND DEPARTING 25L",
           "airportConditions": "ILS_W_APCH_IN_RWY_25L_LDG_AND_DPTG_RWY_25L",
-          "template": "TANSONNHAT [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND_RUNWAY_25L_TDZ [WIND] [RVR] [VIS] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS] [TREND]. [NOTAMS]",
+          "template": "TANSONNHAT [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME]. SURFACE_WIND_RUNWAY_25L_TDZ [WIND] [RVR] [VIS] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS] [TREND]. [NOTAMS] CLOSING_STATEMENT [ATIS_CODE].",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8286,10 +8375,10 @@
         },
         {
           "id": "c34f0d7e-9224-46eb-b236-f778e6f44bdc",
-          "ordinal": 3,
+          "ordinal": 6,
           "name": "LANDING AND DEPARTING 25R",
           "airportConditions": "ILS_W_APCH_IN_RWY_25R_LDG_AND_DPTG_RWY_25R",
-          "template": "TANSONNHAT [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND_RUNWAY_25R_TDZ [WIND] [RVR] [VIS] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS] [TREND]. [NOTAMS]",
+          "template": "TANSONNHAT [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME]. SURFACE_WIND_RUNWAY_25R_TDZ [WIND] [RVR] [VIS] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS] [TREND]. [NOTAMS] CLOSING_STATEMENT [ATIS_CODE].",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8302,10 +8391,10 @@
         },
         {
           "id": "d1312e8e-dae1-4d43-a9c6-2c8a39a8f634",
-          "ordinal": 4,
+          "ordinal": 7,
           "name": "LANDING AND DEPARTING RUNWAY 07L",
           "airportConditions": "RNP_Y_APCH_IN_RWY_07L_LDG_AND_DPTG_RWY_07L",
-          "template": "TANSONNHAT [ATIS_CODE]. [OBS_TIME]. [ARPT_COND].[OBS_TIME] SURFACE_WIND_TDZ_07L [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS] [TREND]. [NOTAMS]",
+          "template": "TANSONNHAT [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME]. SURFACE_WIND_TDZ_07L [WIND] [RVR] [VIS] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS] [TREND]. [NOTAMS] CLOSING_STATEMENT [ATIS_CODE].",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8318,10 +8407,10 @@
         },
         {
           "id": "e773051b-bd9e-4099-87ff-ed77478cb804",
-          "ordinal": 5,
+          "ordinal": 8,
           "name": "LANDING AND DEPARTING RUNWAY 07R",
           "airportConditions": "ILS_W_APCH_IN_RWY_07R_LDG_AND_DPTG_RWY_07R",
-          "template": "TANSONNHAT [ATIS_CODE]. [OBS_TIME]. [ARPT_COND].[OBS_TIME] WIND_RWY_07R_TDZ [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS] [TREND]. [NOTAMS]",
+          "template": "TANSONNHAT [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME]. WIND_RWY_07R_TDZ [WIND] [RVR] [VIS] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS] [TREND]. [NOTAMS] CLOSING_STATEMENT [ATIS_CODE].",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8448,6 +8537,21 @@
           "variableName": "FOLLOW_INSTRUCT_STRICTLY",
           "text": "AIRCRAFT REQUESTED TO FOLLOW ATC INSTRUCTIONS STRICTLY..",
           "voice": "AIRCRAFT REQUESTED TO FOLLOW ATC INSTRUCTIONS STRICTLY. "
+        },
+        {
+          "variableName": "ACDM",
+          "text": "A-CDM IN PROGRESS. SUBMIT TOBT MONITOR TSAT ON PILOT PORTAL https://vats.im/vcl/acdm.",
+          "voice": "ACDM. IN. PROGRESS. SUBMIT. T O B T.  MONITOR. T SAT. ON. PILOT. PORTAL."
+        },
+        {
+          "variableName": "25HIGH",
+          "text": "ILSW APCH IN RWY 25R.. LDG RWY 25R AND DEP RWY 25L. INITIAL CLIMB 5000FT.",
+          "voice": "ILS. WHISKEY. APPROACH. RUNWAY. TWO-FIVE RIGHT. LANDING. RUNWAY. TWO-FIVE RIGHT. AND. DEPARTING RUNWAY. TWO-FIVE LEFT. INITIAL. CLIMB. FIVE-THOUSAND. FEET."
+        },
+        {
+          "variableName": "07HIGH",
+          "text": "RNPY APCH IN RWY 07L.. LDG RWY 07L AND DEP RWY 07R. INITIAL CLIMB 5000FT.",
+          "voice": "RNP. YANKEE. APPROACH. RUNWAY, 'ZERO-SEVEN LEFT. LANDING. RUNWAY, ZERO-SEVEN LEFT. AND. DEPARTING RUNWAY, 'ZERO-SEVEN RIGHT. INITIAL. CLIMB. FIVE. THOUSAND. FEET."
         }
       ],
       "airportConditionDefinitions": [],
