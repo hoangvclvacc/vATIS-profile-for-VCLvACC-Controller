@@ -2,7 +2,7 @@
   "name": "D-ATIS FOR VCLvACC",
   "id": "a329cd0c-57de-47fd-bde7-6bd8d505d773",
   "updateUrl": "https://raw.githubusercontent.com/hoangvclvacc/vATIS-profile-for-VCLvACC-Controller/refs/heads/main/vATIS_Profile_D_ATIS_FOR_VCLvACC.json",
-  "updateSerial": 2026041305,
+  "updateSerial": 2026041306,
   "stations": [
     {
       "id": "5d98962e-b942-4df8-b4bf-32578ce70d88",
@@ -80,7 +80,7 @@
           "unlimitedVisibilityVoice": "visibility. at. one zero kilometers",
           "unlimitedVisibilityText": "VIS 10KM",
           "includeVisibilitySuffix": true,
-          "metersCutoff": 5000,
+          "metersCutoff": 4900,
           "template": {
             "text": "VIS {visibility}M",
             "voice": "VISIBILITY. AT. {visibility}"
@@ -1872,7 +1872,7 @@
           "pronounceDecimal": false,
           "template": {
             "text": "QNH {altimeter|hpa}HPA",
-            "voice": "QNH. {altimeter|hpa} HECTOPASCAL"
+            "voice": "QNH. {altimeter|hpa} HECTOPASKEL"
           }
         },
         "trend": {
@@ -1919,7 +1919,7 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "UK Male",
-        "speechRate": 200
+        "speechRate": 190
       },
       "presets": [
         {
@@ -2074,7 +2074,7 @@
         {
           "variableName": "NOIBAI",
           "text": "[TIME] VVNB INFO",
-          "voice": "NOIPBYE. AIRPORT. INFORMATION."
+          "voice": "NOIBYE. AIRPORT. INFORMATION."
         },
         {
           "variableName": "11R",
@@ -2128,13 +2128,13 @@
         },
         {
           "variableName": "ILS_X_RUNWAY_11L_LANDING_AND_DEPARTING_RUNWAY_11L",
-          "text": "ILS X RWY 11L.. LDG AND DPTG RWY 11L",
-          "voice": "ILS. X-RAY. RUNWAY, WUN-WUN LEFT. LANDING END DEPARTING RUNWAY, WUN-WUN LEFT."
+          "text": "ILS X RWY 11L.. DPTG RWY 11L AND ARR RWY 11L",
+          "voice": "ILS. X-RAY. RUNWAY, WUN-WUN LEFT. DEPARTURE. WUN WUN LEFT. END. ARRIVAL, ONE ONE LEFT."
         },
         {
           "variableName": "ILS_X_RUNWAY_11R_LANDING_AND_DEPARTING_RUNWAY_11R",
-          "text": "ILS X RWY 11R.. LDG AND DPTG RWY 11R",
-          "voice": "ILS. X-RAY. RUNWAY, WUN-WUN RIGHT. LANDING END DEPARTING RUNWAY, WUN-WUN RIGHT. "
+          "text": "ILS X RWY 11R.. DPTG RWY 11R AND ARR RWY 11R",
+          "voice": "ILS. X-RAY. RUNWAY, WUN-WUN RIGHT. DEPARTURE. WUN WUN RIGHT. END. ARRIVAL, ONE ONE RIGHT."
         },
         {
           "variableName": "ILS_W_RUNWAY_29L_LANDING_AND_DEPARTING_RUNWAY_29L",
@@ -4185,7 +4185,7 @@
         {
           "variableName": "DANANG",
           "text": "[TIME] VVDN INFO",
-          "voice": "DANONG. AIRPORT. INFORMATION."
+          "voice": "DANANGGG. AIRPORT. INFORMATION."
         },
         {
           "variableName": "VSA",
@@ -4239,13 +4239,13 @@
         },
         {
           "variableName": "ILS_V_APCH_35L_LANDING_AND_DEPARTING_35L",
-          "text": "ILS VICTOR APPROACH 35L.. DPTG RWY 35L..",
-          "voice": "ILS. VICTOR. APPROACH. TREE FIVE LEFT. DEPARTING RUNWAY, TREE FIVE LEFT."
+          "text": "ILS VICTOR APPROACH 35L.. LANDING AND DEPARTING RUNWAY 35L..",
+          "voice": "ILS. VICTOR. APPROACH. THREE FIVE LEFT. LANDING AND DEPARTING RUNWAY, THREE FIVE LEFT."
         },
         {
           "variableName": "ILS_V_APCH_35R_LANDING_AND_DEPARTING_35R",
-          "text": "ILS VICTOR APPROACH 35R.. DPTG RWY 35R..",
-          "voice": "ILS. VICTOR. APPROACH. TREE FIVE RIGHT. DEPARTING RUNWAY. TREE-FIVE RIGHT."
+          "text": "ILS VICTOR APPROACH 35R.. LANDING AND DEPARTING RUNWAY 35R..",
+          "voice": "ILS. VICTOR. APPROACH. THREE FIVE RIGHT. LANDING AND DEPARTING RUNWAY, THREE FIVE RIGHT."
         },
         {
           "variableName": "SURFACE_WIND",
@@ -8281,12 +8281,12 @@
       "notamsBeforeFreeText": false,
       "airportConditionsBeforeFreeText": false,
       "frequency": 128000000,
-      "idsEndpoint": "https://metar.vatsim.net/metar.php?id=VVTS",
+      "idsEndpoint": "",
       "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "UK Male",
-        "speechRate": 180
+        "speechRate": 160
       },
       "presets": [
         {
@@ -8411,6 +8411,22 @@
           "name": "LANDING AND DEPARTING RUNWAY 07R",
           "airportConditions": "ILS_W_APCH_IN_RWY_07R_LDG_AND_DPTG_RWY_07R",
           "template": "TANSONNHAT [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME]. WIND_RWY_07R_TDZ [WIND] [RVR] [VIS] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS] [TREND]. [NOTAMS] CLOSING_STATEMENT [ATIS_CODE].",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "51689c62-5ea8-4530-afc3-3b1e7dad7e5a",
+          "ordinal": 9,
+          "name": "AIRPORT CLOSED",
+          "notams": "CLOSED",
+          "template": "[NOTAMS]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8552,6 +8568,11 @@
           "variableName": "07HIGH",
           "text": "RNPY APCH IN RWY 07L.. LDG RWY 07L AND DEP RWY 07R. INITIAL CLIMB 5000FT.",
           "voice": "RNP. YANKEE. APPROACH. RUNWAY, 'ZERO-SEVEN LEFT. LANDING. RUNWAY, ZERO-SEVEN LEFT. AND. DEPARTING RUNWAY, 'ZERO-SEVEN RIGHT. INITIAL. CLIMB. FIVE. THOUSAND. FEET."
+        },
+        {
+          "variableName": "CLOSED",
+          "text": "AIRPORT CLOSED.",
+          "voice": "AIRPORT. CLOSED."
         }
       ],
       "airportConditionDefinitions": [],
@@ -10468,7 +10489,7 @@
       "useDecimalTerminology": false,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "Default",
+        "voice": "US Female",
         "speechRate": 170
       },
       "presets": [
@@ -14365,6 +14386,7 @@
       "notamsBeforeFreeText": false,
       "airportConditionsBeforeFreeText": false,
       "frequency": 127250000,
+      "idsEndpoint": "",
       "useDecimalTerminology": false,
       "atisVoice": {
         "useTextToSpeech": true,
@@ -14377,7 +14399,7 @@
           "ordinal": 0,
           "name": "RWY 05",
           "airportConditions": "RWY_05_IN_USE_EXPECT_ILS_DME_APPROACH",
-          "template": "THIS IS TECHO INTERNATIONAL AIRPORT INFORMATION [ATIS_CODE]. TIME [TIME]. [ARPT_COND]. [WIND] [VIS] [RVR] [CLOUDS] [PRESENT_WX] [TEMP] [DEW] [PRESSURE] [TL] [TREND] [WS] [NOTAMS]",
+          "template": "",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -14412,16 +14434,6 @@
           "voice": "AIRPORT."
         },
         {
-          "variableName": "RWY_05_IN_USE_EXPECT_ILS_DME_APPROACH",
-          "text": "RWY 05 IN USE. EXP ILS DME APCH",
-          "voice": "RUNWAY. IN USE. ZERO-FIVE. . EXPECT. I-LS. D-M-E. APPROACH."
-        },
-        {
-          "variableName": "RWY_23_IN_USE_EXPECT_ILS_DME_APCH",
-          "text": "RWY 23 IN USE. EXP ILS DME APCH",
-          "voice": "RUNWAY. IN USE. TWO-TREE.  EXPECT. I-LS. D-M-E. APPROACH."
-        },
-        {
           "variableName": "TECHO",
           "text": "TECHO",
           "voice": ".TECHO"
@@ -14435,6 +14447,21 @@
           "variableName": "INTERNATIONAL",
           "text": "INTL",
           "voice": "INTERNATIONAL."
+        },
+        {
+          "variableName": "VDTI",
+          "text": "[TIME] VDSA ATIS INFO [ATIS_CODE]",
+          "voice": "THIS IS. TECHO. INTERNATIONAL. AIRPORT. INFORMATION [ATIS_CODE]."
+        },
+        {
+          "variableName": "ILS_05",
+          "text": "RUNWAY-IN-USE 05",
+          "voice": "EXPECT. ILS. APPROACH."
+        },
+        {
+          "variableName": "EXP_ILS_05",
+          "text": "EXP ILS",
+          "voice": "RUNWAY, IN USE. ZERO-FIVEP."
         }
       ],
       "airportConditionDefinitions": [],
@@ -14454,7 +14481,7 @@
         "observationTime": {
           "template": {
             "text": "{time}Z",
-            "voice": "{time}"
+            "voice": "TIME. {time}."
           }
         },
         "surfaceWind": {
@@ -14466,7 +14493,7 @@
           "standard": {
             "template": {
               "text": "{wind_dir}{wind_spd}KT",
-              "voice": "WIND {wind_dir}. {wind_spd} KNUT"
+              "voice": "WIND.{wind_dir}. {wind_spd} KNUT"
             }
           },
           "standardGust": {
@@ -16358,10 +16385,10 @@
         {
           "id": "ef562e29-fefd-4b88-9d23-64752bb19bc7",
           "ordinal": 0,
-          "name": "LANDING AND DEPARTING RWY 23",
-          "airportConditions": "EXPECT ILS\r\nRUNWAY IN USE 23 FOR\r\nARRIVAL AND RUN WAY 23\r\nFOR DEPARTURE",
-          "notams": "TRANSITION_LEVEL FLIGHT\r\nLEVEL 130\r\nFOR_DEPARTURE_INFORMS_TO\r\nGROUND\r\nFOR_ARRIVAL_INFORMS_TO\r\nAPPROACH",
-          "template": "VDSA\r\n[TIME] [ARPT_COND].\r\n[WIND] [VIS] [CLOUDS].\r\n[TEMP]/[DEW] [PRESSURE].\r\n[NOTAMS]\r\n[CLOSING]",
+          "name": "ILS 23",
+          "airportConditions": "EXP_ILS_23\r\nILS_23",
+          "notams": "TRANSITION_LEVEL FL130\r\nFOR_DEPARTURE_INFORMS_TO GROUND\r\nFOR_ARRIVAL_INFORMS_TO APPROACH",
+          "template": "VDSA\r\n[TIME] [ARPT_COND]\r\n[WX].\r\n[NOTAMS]\r\n",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -16375,10 +16402,10 @@
         {
           "id": "cf243305-1338-4b20-8fa7-b2f847c0948c",
           "ordinal": 1,
-          "name": "LANDING AND DEPARTING RWY 05",
-          "airportConditions": "EXPECT ILS\r\nRUNWAY IN USE 05 FOR\r\nARRIVAL AND RUN WAY 05\r\nFOR DEPARTURE",
-          "notams": "TRANSITION_LEVEL FLIGHT\r\nLEVEL 130\r\nFOR_DEPARTURE_INFORMS_TO\r\nGROUND\r\nFOR_ARRIVAL_INFORMS_TO\r\nAPPROACH",
-          "template": "VDSA\r\n[TIME] [ARPT_COND].\r\n[WIND] [VIS] [CLOUDS].\r\n[TEMP]/[DEW] [PRESSURE].\r\n[NOTAMS]\r\n[CLOSING]",
+          "name": "ILS 05",
+          "airportConditions": "EXP_ILS_05\r\nILS_05",
+          "notams": "TRANSITION_LEVEL FL130\r\nFOR_DEPARTURE_INFORMS_TO GROUND\r\nFOR_ARRIVAL_INFORMS_TO APPROACH",
+          "template": "VDSA\r\n[TIME] [ARPT_COND]\r\n[WX].\r\n[NOTAMS]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -16440,6 +16467,31 @@
           "variableName": "LEVEL_130",
           "text": "LEVEL 130",
           "voice": "LEVEL 130."
+        },
+        {
+          "variableName": "ILS_23",
+          "text": "RUNWAY-IN-USE 23 FOR ARRIVAL AND RUNWAY 23 FOR DEPARTURE",
+          "voice": "EXPECT. ILS. APPROACH."
+        },
+        {
+          "variableName": "EXP_ILS_23",
+          "text": "EXPECT ILS",
+          "voice": "RUNWAY, IN USE. TWO-THREE."
+        },
+        {
+          "variableName": "FL130",
+          "text": "FLIGHT LEVEL 130",
+          "voice": ".FLIGHT LEVEL. 1 3 0."
+        },
+        {
+          "variableName": "ILS_05",
+          "text": "RUNWAY-IN-USE 05 FOR ARRIVAL AND RUNWAY 05 FOR DEPARTURE",
+          "voice": "EXPECT. ILS. APPROACH."
+        },
+        {
+          "variableName": "EXP_ILS_05",
+          "text": "EXP ILS",
+          "voice": "RUNWAY, IN USE. ZERO-FIVEP."
         }
       ],
       "airportConditionDefinitions": [],
