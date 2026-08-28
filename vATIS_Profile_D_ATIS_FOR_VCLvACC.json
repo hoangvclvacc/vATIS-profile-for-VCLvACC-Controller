@@ -2,7 +2,7 @@
   "name": "D-ATIS FOR VCLvACC",
   "id": "a329cd0c-57de-47fd-bde7-6bd8d505d773",
   "updateUrl": "https://raw.githubusercontent.com/hoangvclvacc/vATIS-profile-for-VCLvACC-Controller/refs/heads/main/vATIS_Profile_D_ATIS_FOR_VCLvACC.json",
-  "updateSerial": 2026041306,
+  "updateSerial": 2026041307,
   "stations": [
     {
       "id": "5d98962e-b942-4df8-b4bf-32578ce70d88",
@@ -10489,8 +10489,8 @@
       "useDecimalTerminology": false,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "US Female",
-        "speechRate": 170
+        "voice": "UK Female",
+        "speechRate": 160
       },
       "presets": [
         {
@@ -10514,7 +10514,7 @@
         {
           "variableName": "VIENTIANE",
           "text": "VIENTIANE",
-          "voice": "VIN TIANE"
+          "voice": "VIEN TIEN"
         },
         {
           "variableName": "DEPARTURE_RUNWAY_31_ARRIVAL_RUNWAY_13_EXPECT_ILS_APPROACH",
@@ -12486,7 +12486,7 @@
         "observationTime": {
           "template": {
             "text": "{time}Z",
-            "voice": "{time}"
+            "voice": "time. {time}."
           }
         },
         "surfaceWind": {
@@ -12497,38 +12497,38 @@
           },
           "standard": {
             "template": {
-              "text": "WIND {wind_dir}/{wind_spd}KT",
+              "text": "{wind_dir}{wind_spd}KT",
               "voice": "WIND {wind_dir} DEGREE. {wind_spd} KNUT"
             }
           },
           "standardGust": {
             "template": {
-              "text": "WIND {wind_dir}/{wind_spd}KT MAX {wind_gust}KT",
+              "text": "{wind_dir}{wind_spd}G{wind_gust}KT",
               "voice": "WIND {wind_dir} DEGREE. {wind_spd} KNUT. MAXIMUM {wind_gust} KNUT"
             }
           },
           "variable": {
             "template": {
-              "text": "WIND VRB{wind_spd}KT",
+              "text": "VRB{wind_spd}KT",
               "voice": "WIND. VARIABLE. {wind_spd} KNUT."
             }
           },
           "variableGust": {
             "template": {
-              "text": "WIND VRB{wind_spd}KT MAX {wind_gust}KT",
+              "text": "VRB{wind_spd}G{wind_gust}KT",
               "voice": "WIND. VARIABLE {wind_spd} KNUT. MAXIMUM {wind_gust} KNUT"
             }
           },
           "variableDirection": {
             "template": {
-              "text": "WIND VRB BTN {wind_vmin}/AND {wind_vmax}/",
+              "text": "{wind_vmin}V{wind_vmax}",
               "voice": "WIND. VARIABLE. BETWEEN {wind_vmin} DEGREE AND {wind_vmax} DEGREE."
             }
           },
           "calm": {
             "calmWindSpeed": 1,
             "template": {
-              "text": "WIND CALM",
+              "text": "{wind_dir}{wind_spd}KT",
               "voice": "CALM"
             }
           }
@@ -12543,11 +12543,11 @@
           "west": "to the west",
           "northWest": "to the north-west",
           "unlimitedVisibilityVoice": "visibility 10 kilometers",
-          "unlimitedVisibilityText": "VIS 10KM",
+          "unlimitedVisibilityText": "9999",
           "includeVisibilitySuffix": true,
           "metersCutoff": 5000,
           "template": {
-            "text": "VIS {visibility}M",
+            "text": "{visibility}",
             "voice": "VISIBILITY {visibility}"
           }
         },
@@ -12696,7 +12696,7 @@
               "spoken": "Light Ice Pellets, Snow And Snow Grains"
             },
             "-RA": {
-              "text": "FBL RA",
+              "text": "-RA",
               "spoken": "Light Rain"
             },
             "-RADZ": {
@@ -12840,7 +12840,7 @@
               "spoken": "Light Showers Of Snow Pellets, Snow And Rain"
             },
             "-SHRA": {
-              "text": "FBL SHRA",
+              "text": "-SHRA",
               "spoken": "Light Showers Of Rain"
             },
             "-SHRAGR": {
@@ -13004,7 +13004,7 @@
               "spoken": "Thunderstorm With Light Snow Pellets, Snow And Rain"
             },
             "-TSRA": {
-              "text": "FBL TSRA",
+              "text": "TSRA",
               "spoken": "Thunderstorm With Light Rain"
             },
             "-TSRAGR": {
@@ -13216,7 +13216,7 @@
               "spoken": "Heavy Ice Pellets, Snow And Snow Grains"
             },
             "+RA": {
-              "text": "HVY RA",
+              "text": "+RA",
               "spoken": "Heavy Rain"
             },
             "+RADZ": {
@@ -13360,7 +13360,7 @@
               "spoken": "Heavy Showers Of Snow Pellets, Snow And Rain"
             },
             "+SHRA": {
-              "text": "HVY SHRA",
+              "text": "+SHRA",
               "spoken": "Heavy Showers Of Rain"
             },
             "+SHRAGR": {
@@ -13524,7 +13524,7 @@
               "spoken": "Thunderstorm With Heavy Snow Pellets, Snow And Rain"
             },
             "+TSRA": {
-              "text": "HVY TSRA",
+              "text": "+TSRA",
               "spoken": "Thunderstorm With Heavy Rain"
             },
             "+TSRAGR": {
@@ -14261,7 +14261,7 @@
           "textAtisCeilingPrefix": "CIG",
           "cloudCeilingLayerTypes": [],
           "convertToMetric": false,
-          "isAltitudeInHundreds": true,
+          "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
             "text": "undetermined",
             "voice": "undetermined"
@@ -14272,23 +14272,23 @@
           },
           "types": {
             "FEW": {
-              "text": "FEW {convective} {altitude}FT ",
+              "text": "FEW{altitude}{convective} ",
               "voice": "few {convective} at {altitude} feet."
             },
             "SCT": {
-              "text": "SCT  {convective} {altitude}FT",
+              "text": "SCT{altitude}{convective} ",
               "voice": "scattered {convective} at{altitude} feet."
             },
             "BKN": {
-              "text": "BKN {convective} {altitude}FT",
+              "text": "BKN{altitude}{convective} ",
               "voice": "broken {convective} at {altitude} feet."
             },
             "OVC": {
-              "text": "OVC {convective} {altitude}FT ",
+              "text": "OVC{altitude}{convective}",
               "voice": "overcast {convective} at {altitude} feet."
             },
             "VV": {
-              "text": "VV {altitude}FT",
+              "text": "VV{altitude}",
               "voice": "indefinite ceiling {altitude}"
             },
             "NSC": {
@@ -14313,7 +14313,7 @@
             "TCU": "towering cumulus"
           },
           "template": {
-            "text": "CLD {clouds}",
+            "text": "{clouds}",
             "voice": "{clouds}"
           }
         },
@@ -14321,7 +14321,7 @@
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "T{temp}",
+            "text": "{temp}",
             "voice": "TEMPERATURE. {temp}"
           }
         },
@@ -14329,15 +14329,15 @@
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "DP{dewpoint}",
+            "text": "{dewpoint}",
             "voice": "DEWPOINT. {dewpoint}"
           }
         },
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "QNH {altimeter} MB",
-            "voice": "Q, NH {altimeter} MILLIBAR"
+            "text": "Q{altimeter}",
+            "voice": "Q, NH {altimeter} MILLIBAR."
           }
         },
         "trend": {
@@ -14378,8 +14378,8 @@
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
-            "text": ".FOR DEP INFORM TWR. FOR ARR INFORM APP. LET YOU RCV INFO {letter}.",
-            "voice": "FOR. DEPARTURE. INFORM TO. TOWER. FOR. ARRIVAL. INFORM TO. APPROACH. ON INITIAL CONTACT. LET YOU HAVE RECEIVED INFORMATION. {letter|word}"
+            "text": "ON INITIAL CONTACT",
+            "voice": "ON INITIAL CONTACT, LET YOU HAVE RECEIVED INFORMATION. {letter|word}."
           }
         }
       },
@@ -14391,15 +14391,16 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "UK Male",
-        "speechRate": 180
+        "speechRate": 150
       },
       "presets": [
         {
           "id": "e9b91e48-572c-42de-b490-8936c1bbb819",
           "ordinal": 0,
           "name": "RWY 05",
-          "airportConditions": "RWY_05_IN_USE_EXPECT_ILS_DME_APPROACH",
-          "template": "",
+          "airportConditions": "EXP_ILS_05\r\nILS_05",
+          "notams": "TRANSITION_LEVEL FL130\r\nFOR_DEPARTURE_INFORMS_TO TWR\r\nFOR_ARRIVAL_INFORMS_TO APP",
+          "template": "VDTI\r\n[TIME] [ARPT_COND]\r\n[WX]\r\n[NOTAMS]\r\n",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -14414,8 +14415,9 @@
           "id": "3eff48db-c0e6-43f3-b778-fb0785a0d7c8",
           "ordinal": 1,
           "name": "RWY 23",
-          "airportConditions": "RWY_23_IN_USE_EXPECT_ILS_DME_APCH",
-          "template": "THIS IS TECHO INTERNATIONAL AIRPORT INFORMATION [ATIS_CODE]. TIME [TIME]. [ARPT_COND]. [WIND] [VIS] [RVR] [CLOUDS] [PRESENT_WX] [TEMP] [DEW] [PRESSURE] [TREND] [WS] [NOTAMS]",
+          "airportConditions": "EXP_ILS_23\r\nILS_23",
+          "notams": "TRANSITION_LEVEL FL130\r\nFOR_DEPARTURE_INFORMS_TO TWR\r\nFOR_ARRIVAL_INFORMS_TO APP",
+          "template": "VDTI\r\n[TIME] [ARPT_COND]\r\n[WX]\r\n[NOTAMS]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -14451,7 +14453,7 @@
         {
           "variableName": "VDTI",
           "text": "[TIME] VDSA ATIS INFO [ATIS_CODE]",
-          "voice": "THIS IS. TECHO. INTERNATIONAL. AIRPORT. INFORMATION [ATIS_CODE]."
+          "voice": "THIS IS. TECHO. INTERNATIONAL. AIRPORT. INFORMATION. [ATIS_CODE]."
         },
         {
           "variableName": "ILS_05",
@@ -14461,7 +14463,47 @@
         {
           "variableName": "EXP_ILS_05",
           "text": "EXP ILS",
-          "voice": "RUNWAY, IN USE. ZERO-FIVEP."
+          "voice": "RUNWAY, IN USE. ZERO-FYPE."
+        },
+        {
+          "variableName": "FOR_DEPARTURE_INFORMS_TO",
+          "text": "FOR DEPARTURE INFORMS TO",
+          "voice": "FOR, DEPARTURE, INFORMS TO."
+        },
+        {
+          "variableName": "FOR_ARRIVAL_INFORMS_TO",
+          "text": "FOR ARRIVAL INFORMS TO",
+          "voice": "FOR, ARRIVAL, INFORMS TO."
+        },
+        {
+          "variableName": "ILS_23",
+          "text": "RUNWAY-IN-USE 23",
+          "voice": "EXPECT.ILS.APPROACH."
+        },
+        {
+          "variableName": "EXP_ILS_23",
+          "text": "EXP ILS",
+          "voice": "RUNWAY, IN USE. TWO-THREE."
+        },
+        {
+          "variableName": "FL130",
+          "text": "FLIGHT LEVEL 130",
+          "voice": ".FLIGHT LEVEL. 1 3 0."
+        },
+        {
+          "variableName": "TRANSITION_LEVEL",
+          "text": "TRANSITION LEVEL",
+          "voice": ".TRANSITION LEVEL."
+        },
+        {
+          "variableName": "TWR",
+          "text": "TOWER",
+          "voice": ".TOWER."
+        },
+        {
+          "variableName": "APP",
+          "text": "APPROACH",
+          "voice": ".APPROACH."
         }
       ],
       "airportConditionDefinitions": [],
@@ -14498,7 +14540,7 @@
           },
           "standardGust": {
             "template": {
-              "text": "{wind_dir}/{wind_spd}G{wind_gust}KT",
+              "text": "{wind_dir}{wind_spd}G{wind_gust}KT",
               "voice": "WIND {wind_dir} DEGREE, {wind_spd} KNUT. GUSTS {wind_gust} KNUT"
             }
           },
@@ -14523,7 +14565,7 @@
           "calm": {
             "calmWindSpeed": 1,
             "template": {
-              "text": "CALM",
+              "text": "{wind_dir}{wind_spd}KT",
               "voice": "CALM"
             }
           }
@@ -14538,7 +14580,7 @@
           "west": "to the west",
           "northWest": "to the north-west",
           "unlimitedVisibilityVoice": "visibility. 1 0 kilometers",
-          "unlimitedVisibilityText": "VIS 10KM",
+          "unlimitedVisibilityText": "9999",
           "includeVisibilitySuffix": true,
           "metersCutoff": 5000,
           "template": {
@@ -16267,19 +16309,19 @@
           },
           "types": {
             "FEW": {
-              "text": "FEW{convective}{altitude}",
+              "text": "FEW{altitude}{convective}",
               "voice": "clouds. few {convective}. at. {altitude} feet."
             },
             "SCT": {
-              "text": "SCT{convective}{altitude}",
+              "text": "SCT{altitude}{convective}",
               "voice": "scattered. {convective} at. {altitude} feet."
             },
             "BKN": {
-              "text": "BKN{convective}{altitude}",
+              "text": "BKN{altitude}{convective}",
               "voice": "broken. at {convective} {altitude} feet."
             },
             "OVC": {
-              "text": "OVC{convective}{altitude}",
+              "text": "OVC{altitude}{convective}",
               "voice": "overcast. at {convective} {altitude} feet."
             },
             "VV": {
@@ -16332,7 +16374,7 @@
           "pronounceDecimal": false,
           "template": {
             "text": "Q{altimeter|hpa}",
-            "voice": "Q. NH. {altimeter|hpa} MILIBAR"
+            "voice": "Q, NH. {altimeter|hpa} MILIBAR."
           }
         },
         "trend": {
@@ -16388,7 +16430,7 @@
           "name": "ILS 23",
           "airportConditions": "EXP_ILS_23\r\nILS_23",
           "notams": "TRANSITION_LEVEL FL130\r\nFOR_DEPARTURE_INFORMS_TO GROUND\r\nFOR_ARRIVAL_INFORMS_TO APPROACH",
-          "template": "VDSA\r\n[TIME] [ARPT_COND]\r\n[WX].\r\n[NOTAMS]\r\n",
+          "template": "VDSA\r\n[TIME] [ARPT_COND]\r\n[WX]\r\n[NOTAMS]\r\n",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -16405,7 +16447,7 @@
           "name": "ILS 05",
           "airportConditions": "EXP_ILS_05\r\nILS_05",
           "notams": "TRANSITION_LEVEL FL130\r\nFOR_DEPARTURE_INFORMS_TO GROUND\r\nFOR_ARRIVAL_INFORMS_TO APPROACH",
-          "template": "VDSA\r\n[TIME] [ARPT_COND]\r\n[WX].\r\n[NOTAMS]",
+          "template": "VDSA\r\n[TIME] [ARPT_COND]\r\n[WX]\r\n[NOTAMS]\r\n",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -16436,7 +16478,7 @@
         {
           "variableName": "VDSA",
           "text": "[TIME] VDSA ATIS INFO [ATIS_CODE]",
-          "voice": "THIS IS. ANGKOR. INTERNATIONAL. AIRPORT. INFORMATION [ATIS_CODE]."
+          "voice": "THIS IS. ANGKOR. INTERNATIONAL. AIRPORT. INFORMATION.[ATIS_CODE]."
         },
         {
           "variableName": "TRANSITION_LEVEL",
@@ -16491,7 +16533,7 @@
         {
           "variableName": "EXP_ILS_05",
           "text": "EXP ILS",
-          "voice": "RUNWAY, IN USE. ZERO-FIVEP."
+          "voice": "RUNWAY, IN USE. ZERO-FYEP."
         }
       ],
       "airportConditionDefinitions": [],
