@@ -2,7 +2,7 @@
   "name": "D-ATIS FOR VCLvACC",
   "id": "a329cd0c-57de-47fd-bde7-6bd8d505d773",
   "updateUrl": "https://raw.githubusercontent.com/hoangvclvacc/vATIS-profile-for-VCLvACC-Controller/refs/heads/main/vATIS_Profile_D_ATIS_FOR_VCLvACC.json",
-  "updateSerial": 2026041307,
+  "updateSerial": 2026041308,
   "stations": [
     {
       "id": "5d98962e-b942-4df8-b4bf-32578ce70d88",
@@ -1763,16 +1763,16 @@
               "spoken": "Dust/Sand Whirls In The Vicinity"
             },
             "VCSH": {
-              "text": "VCSH",
-              "spoken": "Showers In The Vicinity"
+              "text": "",
+              "spoken": ""
             },
             "VCSS": {
               "text": "VCSS",
               "spoken": "Sandstorm In The Vicinity"
             },
             "VCTS": {
-              "text": "VCTS",
-              "spoken": "Cumulonimbus Clouds, and, climb. out."
+              "text": "",
+              "spoken": ""
             },
             "VCVA": {
               "text": "VCVA",
@@ -1905,7 +1905,7 @@
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
             "text": "ADZ ON INITIAL CTC YOU HAVE INFO {letter}.",
             "voice": "ADVISE ON INITIAL CONTACT. YOU HAVE INFORMATION {letter|word}"
@@ -1919,7 +1919,7 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "UK Male",
-        "speechRate": 190
+        "speechRate": 180
       },
       "presets": [
         {
@@ -1928,7 +1928,7 @@
           "name": "11 OPERATIONS",
           "airportConditions": "ILS_X_RUNWAY_11L_DEPARTURE_11R_AND_ARRIVAL_11L",
           "notams": "",
-          "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS]",
+          "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS].[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -1945,7 +1945,7 @@
           "name": "11 High",
           "airportConditions": "11HIGH",
           "notams": "ACDM",
-          "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS]",
+          "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS].[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -1961,7 +1961,7 @@
           "ordinal": 3,
           "name": "29 OPERATIONS",
           "airportConditions": "ILS_X_RUNWAY_29R_DEPARTURE_29L_AND_ARRIVAL_29R",
-          "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS]",
+          "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS][CLOSING].",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -1978,7 +1978,7 @@
           "name": "29 High",
           "airportConditions": "29HIGH",
           "notams": "ACDM",
-          "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS]",
+          "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS].[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -1995,7 +1995,7 @@
           "name": "LANDING AND DEPARTING 11L",
           "airportConditions": "ILS_X_RUNWAY_11L_LANDING_AND_DEPARTING_RUNWAY_11L",
           "notams": "",
-          "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS]",
+          "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS].[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -2011,7 +2011,7 @@
           "ordinal": 6,
           "name": "LANDING AND DEPARTING 11R",
           "airportConditions": "ILS_X_RUNWAY_11R_LANDING_AND_DEPARTING_RUNWAY_11R",
-          "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS]",
+          "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS].[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -2027,7 +2027,7 @@
           "ordinal": 7,
           "name": "LANDING AND DEPARTING RUNWAY 29L",
           "airportConditions": "ILS_W_RUNWAY_29L_LANDING_AND_DEPARTING_RUNWAY_29L",
-          "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS]",
+          "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS].[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -2043,7 +2043,23 @@
           "ordinal": 8,
           "name": "LANIDNG AND DEPARTING RUNWAY 29R",
           "airportConditions": "ILS_X_RUNWAY_29R_LANDING_AND_DEPARTING_RUNWAY_29R",
-          "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS]",
+          "template": "NOIBAI [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME] SURFACE_WIND [WIND] [VIS] [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS]  [TREND]. [NOTAMS].[CLOSING]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "ba46b865-77e7-4b67-bba0-69c161796274",
+          "ordinal": 9,
+          "name": "AIRPORT CLOSED",
+          "notams": "CLOSED",
+          "template": "[NOTAMS]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -2160,6 +2176,11 @@
           "variableName": "29HIGH",
           "text": "ILS X RWY 29R.. DPTG RWY 29L AND ARR RWY 29R. INITIAL CLIMB 5000FT.",
           "voice": "ILS. X-RAY. RUNWAY, TWO-NINER RIGHT. DEPARTURE. TWO-NINER RIGHT. AND, ARRIVAL , TWO-NINER LEFT. INITIAL. CLIMB. FIVE-THOUSAND. FEET."
+        },
+        {
+          "variableName": "CLOSED",
+          "text": "AIRPORT CLOSED",
+          "voice": "AIRPORT.CLOSED."
         }
       ],
       "airportConditionDefinitions": [],
@@ -3939,8 +3960,8 @@
               "spoken": "Sandstorm In The Vicinity"
             },
             "VCTS": {
-              "text": "VCTS",
-              "spoken": "Thunderstorm In The Vicinity"
+              "text": "",
+              "spoken": ""
             },
             "VCVA": {
               "text": "VCVA",
@@ -4087,7 +4108,7 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "UK Male",
-        "speechRate": 190
+        "speechRate": 200
       },
       "presets": [
         {
@@ -6042,7 +6063,7 @@
               "spoken": "Dust/Sand Whirls In The Vicinity"
             },
             "VCSH": {
-              "text": "VCSH",
+              "text": "",
               "spoken": "Showers In The Vicinity"
             },
             "VCSS": {
@@ -6050,8 +6071,8 @@
               "spoken": "Sandstorm In The Vicinity"
             },
             "VCTS": {
-              "text": "VCTS",
-              "spoken": "Thunderstorm In The Vicinity"
+              "text": "",
+              "spoken": ""
             },
             "VCVA": {
               "text": "VCVA",
@@ -6198,7 +6219,7 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "UK Male",
-        "speechRate": 200
+        "speechRate": 190
       },
       "presets": [
         {
@@ -8128,16 +8149,16 @@
               "spoken": "Dust/Sand Whirls In The Vicinity"
             },
             "VCSH": {
-              "text": "VCSH",
-              "spoken": "Showers In The Vicinity"
+              "text": "",
+              "spoken": ""
             },
             "VCSS": {
               "text": "VCSS",
               "spoken": "Sandstorm In The Vicinity"
             },
             "VCTS": {
-              "text": "VCTS",
-              "spoken": "Thunderstorm In The Vicinity"
+              "text": "",
+              "spoken": ""
             },
             "VCVA": {
               "text": "VCVA",
@@ -8295,7 +8316,7 @@
           "name": "25L/R",
           "airportConditions": "ILS_W_APCH_IN_RWY_25R_LDG_RWY_25R_AND_DPTG_RWY_25L",
           "notams": "",
-          "template": "TANSONNHAT [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME]. SURFACE_WIND_RUNWAY_25R_TDZ [WIND] [RVR] [VIS] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS] [TREND]. [NOTAMS] CLOSING_STATEMENT [ATIS_CODE].",
+          "template": "TANSONNHAT [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME]. SURFACE_WIND_RUNWAY_25R_TDZ [WIND] TDZ_25L [WIND] [RVR] [VIS] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS] [TREND]. [NOTAMS] CLOSING_STATEMENT [ATIS_CODE].",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8427,6 +8448,22 @@
           "name": "AIRPORT CLOSED",
           "notams": "CLOSED",
           "template": "[NOTAMS]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "2a1220d0-aad7-463a-9789-101386b32f96",
+          "ordinal": 10,
+          "name": "ILS LOC 07R - DEP 07L",
+          "airportConditions": "LOC07RDEP07L",
+          "template": "TANSONNHAT [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [OBS_TIME]. SURFACE_WIND_TDZ_07L [WIND] [RVR] [VIS] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [RECENT_WX] [WS] [TREND]. [NOTAMS] CLOSING_STATEMENT [ATIS_CODE].",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8573,6 +8610,16 @@
           "variableName": "CLOSED",
           "text": "AIRPORT CLOSED.",
           "voice": "AIRPORT. CLOSED."
+        },
+        {
+          "variableName": "TDZ_25L",
+          "text": "RWY 25L TDZ",
+          "voice": ".RUNWAY. TWO-FIVE LEFT."
+        },
+        {
+          "variableName": "LOC07RDEP07L",
+          "text": "ILSW LOC ONLY 07R.. LDG RWY 07R AND DEP RWY 07L.",
+          "voice": "ILS. WHISKEY. LOCALIZER. ON. ZERO-SEVEN RIGHT... LANDING. ZERO-SEVEN RIGHT. AND, DEPARTNG RUNWAY. ZERO SEVEN LEFT.."
         }
       ],
       "airportConditionDefinitions": [],
