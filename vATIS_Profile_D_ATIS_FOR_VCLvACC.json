@@ -2,7 +2,7 @@
   "name": "D-ATIS FOR VCLvACC",
   "id": "a329cd0c-57de-47fd-bde7-6bd8d505d773",
   "updateUrl": "https://raw.githubusercontent.com/hoangvclvacc/vATIS-profile-for-VCLvACC-Controller/refs/heads/main/vATIS_Profile_D_ATIS_FOR_VCLvACC.json",
-  "updateSerial": 2026041310,
+  "updateSerial": 2026041311,
   "stations": [
     {
       "id": "5d98962e-b942-4df8-b4bf-32578ce70d88",
@@ -2230,7 +2230,7 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "useWavPack": false,
-        "voice": "UK Male",
+        "voice": "British Male (Malcolm)",
         "speechRate": 180
       },
       "presets": [
@@ -4737,7 +4737,7 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "useWavPack": false,
-        "voice": "UK Male",
+        "voice": "British Male (Malcolm)",
         "speechRate": 190
       },
       "presets": [
@@ -7166,7 +7166,7 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "useWavPack": false,
-        "voice": "UK Male",
+        "voice": "British Male (Malcolm)",
         "speechRate": 190
       },
       "presets": [
@@ -9573,7 +9573,7 @@
         "useTextToSpeech": true,
         "useWavPack": false,
         "wavPackId": "b31234934e72439382e33f2f8e0ff75b",
-        "voice": "UK Male",
+        "voice": "British Male (Malcolm)",
         "speechRate": 160
       },
       "presets": [
@@ -12123,7 +12123,7 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "useWavPack": false,
-        "voice": "UK Female",
+        "voice": "Irish Female (Moira)",
         "speechRate": 160
       },
       "presets": [
@@ -14393,7 +14393,7 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "useWavPack": false,
-        "voice": "UK Male",
+        "voice": "British Male (Oliver)",
         "speechRate": 170
       },
       "presets": [
@@ -16504,7 +16504,7 @@
           },
           "template": {
             "text": "Q{altimeter}",
-            "voice": "Q, NH {altimeter} MILLIBAR."
+            "voice": "Q, NH, {altimeter} MILLIBAR."
           }
         },
         "trend": {
@@ -16660,8 +16660,8 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "useWavPack": false,
-        "voice": "UK Male",
-        "speechRate": 150
+        "voice": "British Male (Oliver)",
+        "speechRate": 140
       },
       "presets": [
         {
@@ -16722,8 +16722,8 @@
         },
         {
           "variableName": "VDTI",
-          "text": "[TIME] VDSA ATIS INFO [ATIS_CODE]",
-          "voice": "THIS IS. TECHO. INTERNATIONAL. AIRPORT. INFORMATION. [ATIS_CODE]."
+          "text": "[TIME] VDTI ATIS INFO [ATIS_CODE]",
+          "voice": "THIS IS TECHO INTERNATIONAL AIRPORT. INFORMATION. [ATIS_CODE]."
         },
         {
           "variableName": "ILS_05",
@@ -19008,7 +19008,7 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "useWavPack": false,
-        "voice": "UK Male",
+        "voice": "British Male (Oliver)",
         "speechRate": 150
       },
       "presets": [
@@ -21383,16 +21383,32 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "useWavPack": false,
-        "voice": "UK Female",
+        "voice": "South African Female (Tessa)",
         "speechRate": 170
       },
       "presets": [
         {
           "id": "0264821a-24a6-44c0-8979-1e0247211d10",
           "ordinal": 0,
-          "name": "RNP 10L - DEP 28R",
+          "name": "RNP 10L - DEP 10L",
           "airportConditions": "ARR10L.\r\nRNPZ\r\nDEP10L",
           "template": "PHUQUOC\r\n[TIME]\r\n[ARPT_COND]\r\nMET [WIND] [VIS] [RVR] [CLOUDS] [TEMP] [DEW] [PRESSURE] [TREND]E\r\nTL.\r\nR10L.\r\n[NOTAMS]\r\n[CLOSING].\r\n",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "7ca7dfa0-0a55-4625-a4b9-994e44c18834",
+          "ordinal": 1,
+          "name": "RNP 10R - DEP 10R",
+          "airportConditions": "ARR10R.\r\nRNPZ10R\r\nDEP10R",
+          "template": "PHUQUOC\r\n[TIME]\r\n[ARPT_COND]\r\nMET [WIND] [VIS] [RVR] [CLOUDS] [TEMP] [DEW] [PRESSURE] [TREND]E\r\nTL.\r\nR10R.\r\n[NOTAMS]\r\n[CLOSING].\r\n",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -21444,6 +21460,26 @@
           "variableName": "TL",
           "text": "TRANSITION LEVEL FL100",
           "voice": "TRANSITION LEVEL, FLIGHT LEVEL. 100."
+        },
+        {
+          "variableName": "ARR10R",
+          "text": "ARRIVALS, RWY 10R",
+          "voice": "ARRIVALS, RUNWAY ONE ZERO RIGHT."
+        },
+        {
+          "variableName": "RNPZ10R",
+          "text": "EXP RNP Z APCH, RWY 10R.",
+          "voice": "EXPECT RNP ZULU APPROACH. RUNWAY 10 RIGHT."
+        },
+        {
+          "variableName": "DEP10R",
+          "text": "DEPARTURES, RWY 10R.",
+          "voice": "DEPARTURES, RUNWAY ONE ZERO RIGHT."
+        },
+        {
+          "variableName": "R10R",
+          "text": "RWY 10R IN USE",
+          "voice": "RUNWAY ONE ZERO RIGHT IN USE."
         }
       ],
       "patterns": [],
